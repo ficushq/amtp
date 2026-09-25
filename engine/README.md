@@ -23,9 +23,9 @@ const result = await engine.receiveEnvelope({ peerInstanceId, rawBody })
 The `amtp` CLI is a thin host over this engine; the
 [contract kit](src/contract-kit/) is how any host proves its ports conform.
 Full walkthrough: the
-[implementer's guide](https://github.com/Hire-Tau/amtp/blob/main/docs/implementers-guide.md).
+[implementer's guide](https://github.com/ficushq/amtp/blob/main/docs/implementers-guide.md).
 
-Spec: [AMTP.md](https://github.com/Hire-Tau/amtp/blob/main/docs/SPEC.md).
-Part of [Hire-Tau/amtp](https://github.com/Hire-Tau/amtp). MIT.
+Spec: [AMTP.md](https://github.com/ficushq/amtp/blob/main/docs/SPEC.md).
+Part of [ficushq/amtp](https://github.com/ficushq/amtp). MIT.
 
 See [signed GET compatibility](../docs/compatibility.md) and [troubleshooting](../docs/troubleshooting.md).

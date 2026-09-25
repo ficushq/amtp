@@ -20,7 +20,7 @@ bun add -g amtp-node   # installs the `amtp` command
 Or build a self-contained binary from source:
 
 ```bash
-git clone https://github.com/Hire-Tau/amtp && cd amtp
+git clone https://github.com/ficushq/amtp && cd amtp
 bun install
 cd node
 bun run build          # writes dist/amtp, a self-contained executable

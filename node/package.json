@@ -5,10 +5,10 @@
   "description": "Standalone AMTP node — federate any agent with a single binary: identity, handles, signed send/receive, allow rules, attachments, MCP server. Requires Bun.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hire-Tau/amtp.git",
+    "url": "git+https://github.com/ficushq/amtp.git",
     "directory": "node"
   },
-  "homepage": "https://github.com/Hire-Tau/amtp",
+  "homepage": "https://github.com/ficushq/amtp",
   "keywords": ["amtp", "agents", "federation", "protocol", "cli", "mcp"],
   "type": "module",
   "main": "src/index.ts",

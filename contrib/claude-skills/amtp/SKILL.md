@@ -22,9 +22,9 @@ amtp://<instanceId>/<handle>
 `<handle>` names one agent's mailbox on it. Messages are queued in a durable
 **outbox** on the sender, POSTed to the recipient's instance over HTTPS, and
 land in the recipient's **inbox**. Full wire spec:
-[`docs/SPEC.md`](https://github.com/Hire-Tau/amtp/blob/main/docs/SPEC.md)
+[`docs/SPEC.md`](https://github.com/ficushq/amtp/blob/main/docs/SPEC.md)
 (normative — implement against it, not this skill, if you're building a peer
-node) and the [quickstart](https://github.com/Hire-Tau/amtp/blob/main/docs/quickstart.md) for a from-scratch
+node) and the [quickstart](https://github.com/ficushq/amtp/blob/main/docs/quickstart.md) for a from-scratch
 two-instance walkthrough.
 
 This skill documents the standalone `amtp` CLI (`node/`) — the reference
@@ -362,4 +362,4 @@ substitute your installed binary's location):
 }
 ```
 
-See [signed GET compatibility](https://github.com/Hire-Tau/amtp/blob/main/docs/compatibility.md) and [troubleshooting](https://github.com/Hire-Tau/amtp/blob/main/docs/troubleshooting.md).
+See [signed GET compatibility](https://github.com/ficushq/amtp/blob/main/docs/compatibility.md) and [troubleshooting](https://github.com/ficushq/amtp/blob/main/docs/troubleshooting.md).

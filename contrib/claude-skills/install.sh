@@ -5,11 +5,11 @@
 #
 # Usage:
 #   bash contrib/claude-skills/install.sh            # from an amtp checkout
-#   curl -fsSL https://raw.githubusercontent.com/Hire-Tau/amtp/main/contrib/claude-skills/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/ficushq/amtp/main/contrib/claude-skills/install.sh | bash
 set -euo pipefail
 
 DEST="${CLAUDE_SKILLS_DIR:-${HOME}/.claude/skills}"
-BASE_URL="https://raw.githubusercontent.com/Hire-Tau/amtp/main/contrib/claude-skills"
+BASE_URL="https://raw.githubusercontent.com/ficushq/amtp/main/contrib/claude-skills"
 SKILLS=(amtp)
 
 script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]:-/dev/null}")" 2>/dev/null && pwd || true)

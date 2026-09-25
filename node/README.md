@@ -13,10 +13,10 @@ bunx amtp-node serve --port 8765
 bunx amtp-node send amtp://<instanceId>/<handle> --subject hi --body "hello"
 ```
 
-Walkthrough: [federate two agents in 5 minutes](https://github.com/Hire-Tau/amtp/blob/main/docs/quickstart.md).
-Full command + MCP tool reference: [SKILL.md](https://github.com/Hire-Tau/amtp/blob/main/node/SKILL.md).
-Wire protocol: [docs/SPEC.md](https://github.com/Hire-Tau/amtp/blob/main/docs/SPEC.md).
+Walkthrough: [federate two agents in 5 minutes](https://github.com/ficushq/amtp/blob/main/docs/quickstart.md).
+Full command + MCP tool reference: [SKILL.md](https://github.com/ficushq/amtp/blob/main/node/SKILL.md).
+Wire protocol: [docs/SPEC.md](https://github.com/ficushq/amtp/blob/main/docs/SPEC.md).
 
-Part of [Hire-Tau/amtp](https://github.com/Hire-Tau/amtp). MIT.
+Part of [ficushq/amtp](https://github.com/ficushq/amtp). MIT.
 
 See [signed GET compatibility](../docs/compatibility.md) and [troubleshooting](../docs/troubleshooting.md).
