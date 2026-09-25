@@ -28,7 +28,7 @@ mail, managing peers and handles via the `amtp` CLI), install the bundled
 skill:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Hire-Tau/amtp/main/contrib/claude-skills/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ficushq/amtp/main/contrib/claude-skills/install.sh | bash
 ```
 
 Or from a checkout: `bash contrib/claude-skills/install.sh`. Skills land in

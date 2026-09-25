@@ -22,13 +22,13 @@ const addr = parseAmtpAddress('amtp://i-abc123.../support')
 ```
 
 The normative golden vectors (Appendix A of the
-[spec](https://github.com/Hire-Tau/amtp/blob/main/docs/SPEC.md)) ship inside
+[spec](https://github.com/ficushq/amtp/blob/main/docs/SPEC.md)) ship inside
 this package — conformance-test any implementation against them:
 
 ```ts
 import addresses from 'amtp-protocol/vectors/addresses.json'
 ```
 
-Part of [Hire-Tau/amtp](https://github.com/Hire-Tau/amtp). MIT.
+Part of [ficushq/amtp](https://github.com/ficushq/amtp). MIT.
 
 See [signed GET compatibility](../docs/compatibility.md) and [troubleshooting](../docs/troubleshooting.md).

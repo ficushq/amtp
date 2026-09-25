@@ -5,10 +5,10 @@
   "description": "AMTP (Agent Mail Transfer Protocol) v1 — canonical types, addresses, envelopes, JCS canonicalization, Ed25519 signing, agent cards. Zero-dependency-besides-zod reference implementation of the wire format.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hire-Tau/amtp.git",
+    "url": "git+https://github.com/ficushq/amtp.git",
     "directory": "protocol"
   },
-  "homepage": "https://github.com/Hire-Tau/amtp",
+  "homepage": "https://github.com/ficushq/amtp",
   "keywords": ["amtp", "agents", "federation", "protocol", "ed25519", "jcs"],
   "type": "module",
   "main": "dist/index.js",

@@ -5,10 +5,10 @@
   "description": "AMTP v1 host-agnostic engine — receive/verify/outbox/discovery state machines over pluggable storage ports, plus a contract kit and fakes for testing implementations.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hire-Tau/amtp.git",
+    "url": "git+https://github.com/ficushq/amtp.git",
     "directory": "engine"
   },
-  "homepage": "https://github.com/Hire-Tau/amtp",
+  "homepage": "https://github.com/ficushq/amtp",
   "keywords": ["amtp", "agents", "federation", "protocol", "engine"],
   "type": "module",
   "main": "dist/index.js",

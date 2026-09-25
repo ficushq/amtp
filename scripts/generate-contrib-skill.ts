@@ -15,7 +15,7 @@ import { join, relative } from 'node:path'
 const ROOT = join(import.meta.dir, '..')
 const SOURCE = join(ROOT, 'node', 'SKILL.md')
 const TARGET = join(ROOT, 'contrib', 'claude-skills', 'amtp', 'SKILL.md')
-const BASE_URL = 'https://github.com/Hire-Tau/amtp/blob/main/'
+const BASE_URL = 'https://github.com/ficushq/amtp/blob/main/'
 const MARKER =
   '<!-- GENERATED FILE — edit node/SKILL.md and run: bun scripts/generate-contrib-skill.ts -->'
 
