@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 (Unreleased)
+## 0.2.0 (2026-10-27)
 
 - Sign authenticated GETs over proxy-stable AMTP route-relative paths.
 - Accept one bounded legacy observed-path candidate during the transition.
