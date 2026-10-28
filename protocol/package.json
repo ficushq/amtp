@@ -32,7 +32,7 @@
     "prepublishOnly": "bun run build"
   },
   "dependencies": {
-    "zod": "^3.24.0"
+    "zod": "^3.25.0 || ^4.0.0"
   },
   "devDependencies": {
     "tsup": "^8",

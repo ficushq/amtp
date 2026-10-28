@@ -7,7 +7,7 @@
     },
     "engine": {
       "name": "amtp-engine",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "dependencies": {
         "amtp-protocol": "workspace:*",
       },
@@ -18,7 +18,7 @@
     },
     "node": {
       "name": "amtp-node",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "bin": {
         "amtp": "bin/amtp.js",
       },
@@ -36,9 +36,9 @@
     },
     "protocol": {
       "name": "amtp-protocol",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "dependencies": {
-        "zod": "^3.24.0",
+        "zod": "^3.25.0 || ^4.0.0",
       },
       "devDependencies": {
         "tsup": "^8",

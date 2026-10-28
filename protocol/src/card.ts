@@ -27,7 +27,7 @@ export interface AmtpSignedAgentCard extends AmtpSignedAgentCardSansSig {
 }
 
 export const jsonValueSchema: z.ZodType<JsonValue> = z.lazy(() =>
-  z.union([z.null(), z.boolean(), z.number().finite(), z.string(), z.array(jsonValueSchema), z.record(jsonValueSchema)])
+  z.union([z.null(), z.boolean(), z.number().finite(), z.string(), z.array(jsonValueSchema), z.record(z.string(), jsonValueSchema)])
 )
 
 /**
@@ -35,15 +35,15 @@ export const jsonValueSchema: z.ZodType<JsonValue> = z.lazy(() =>
  * so the verifier canonicalizes the SAME value the signer signed (§13 says
  * ignore-unknown, but stripping inside a signed payload would break the sig).
  */
-export const amtpAgentCardSchema = z
+export const amtpAgentCardSchema: z.ZodType<AmtpAgentCard> = z
   .object({
     name: z.string().min(1).max(CARD_NAME_MAX).optional(),
     description: z.string().min(1).max(CARD_DESCRIPTION_MAX).optional(),
-    extensions: z.record(jsonValueSchema).optional(),
+    extensions: z.record(z.string(), jsonValueSchema).optional(),
   })
   .passthrough()
 
-export const amtpSignedAgentCardSchema = z.object({
+export const amtpSignedAgentCardSchema: z.ZodType<AmtpSignedAgentCard> = z.object({
   v: z.literal(1),
   instanceId: z.string().min(1),
   handle: z.string().min(1),

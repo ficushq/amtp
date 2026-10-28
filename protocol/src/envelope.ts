@@ -22,7 +22,7 @@ export interface AmtpEnvelope {
   attachments?: AmtpAttachmentRef[]
 }
 
-export const amtpAttachmentRefSchema = z.object({
+export const amtpAttachmentRefSchema: z.ZodType<AmtpAttachmentRef> = z.object({
   id: z.string().min(1),
   filename: z.string().min(1),
   contentType: z.string().min(1),
@@ -30,7 +30,7 @@ export const amtpAttachmentRefSchema = z.object({
   sha256: z.string().min(1),
 })
 
-export const amtpEnvelopeSchema = z.object({
+export const amtpEnvelopeSchema: z.ZodType<AmtpEnvelope> = z.object({
   v: z.literal(1),
   id: z.string().min(1),
   ts: z.number(),
