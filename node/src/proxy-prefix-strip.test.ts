@@ -182,11 +182,17 @@ test('byte-stable attachment IDs remain identical through routing and authorizat
   const refs = ids.map((id) => {
     const bytes = new TextEncoder().encode(`bytes:${id}`)
     const sha256 = new Bun.CryptoHasher('sha256').update(bytes).digest('hex')
-    writeFileSync(join(blobsDir(join(workDir, 'receiver')), id), bytes)
+    // Production always stores blobs under a freshly minted UUID (ops/attach.ts,
+    // hooks.ts), never under the wire-visible attachment id. Mirror that here:
+    // ids like '%2F' and '%2f' would otherwise collide as filenames on
+    // case-insensitive filesystems (macOS APFS) and this test would read the
+    // wrong bytes back.
+    const storagePath = randomUUID()
+    writeFileSync(join(blobsDir(join(workDir, 'receiver')), storagePath), bytes)
     receiverDb.run(
       `INSERT INTO attachments (id, message_id, direction, filename, content_type, byte_size, sha256, storage_path, created_at)
        VALUES (?, NULL, 'out', 'blob.bin', 'application/octet-stream', ?, ?, ?, ?)`,
-      [id, bytes.length, sha256, id, Date.now()]
+      [id, bytes.length, sha256, storagePath, Date.now()]
     )
     return { id, filename: 'blob.bin', contentType: 'application/octet-stream', byteSize: bytes.length, sha256, bytes }
   })
